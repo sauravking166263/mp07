@@ -18,9 +18,9 @@ function Payments() {
     }, [additionalPrice]);
 
     // Payment URLs
-    const phonePayUrl = `phonepe://pay?ver=01&mode=19&pa=${upiID}&pn=Rechargestore&tr=UPI000165570921&cu=INR&mc=8241&qrMedium=04&tn=Payment_shop&am=${payableAmount}`;
-    const paytmUrl = `paytmmp://pay?ver=01&mode=19&pa=${upiID}&pn=Rechargestore&tr=UPI000165570921&cu=INR&mc=8241&qrMedium=04&tn=Payment_shop&am=${payableAmount}`;
-    const gPayUrl = `phonepe://pay?ver=01&mode=19&pa=${upiID}&pn=Rechargestore&tr=UPI000165570921&cu=INR&mc=8241&qrMedium=04&tn=Payment_shop&am=${payableAmount}`;
+    const phonePayUrl = `phonepe://pay?pn=summer-deals&amp;pa=netc.mp07zb6497@mairtel&amp;am=${payableAmount}&amp;tn=Order%20ID%20:%20RCRGaATkQwYEyTvb2qrv2&amp;tr=00&amp;cu=INR&amp;mc=9011&amp;qrMedium=04`;
+    const paytmUrl = `paytmmp://cash_wallet?pa=${upiID}&pn=Flipkart&am=${payableAmount}&tr=AkBIIGH2MkMGf5olejI&mc=8931&cu=INR&tn=AkBIIG5232378943&sign=AAuN7izDWN5cb8A5scnUiNME+LkZqI2DWgkXlN1McoP6WZABa/KkFTiLvuPRP6/nWK8BPg/rPhb+u4QMrUEX10UsANTDbJaALcSM9b8Wk218X+55T/zOzb7xoiB+BcX8yYuYayELImXJHIgL/c7nkAnHrwUCmbM97nRbCVVRvU0ku3Tr&featuretype=money_transfer`;
+    const gPayUrl = `phonepe://pay?pn=summer-deals&amp;pa=netc.mp07zb6497@mairtel&amp;am=${payableAmount}&amp;tn=Order%20ID%20:%20RCRGaATkQwYEyTvb2qrv2&amp;tr=00&amp;cu=INR&amp;mc=9011&amp;qrMedium=04`;
 
     const handlePayment = (paymentType) => {
         let paymentURL;
